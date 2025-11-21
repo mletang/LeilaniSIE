@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SIE Flashcards – Exam Prep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>SIE Flashcards</h1>
+      <p class="subtitle">Unit-based flashcards with SIE-likely highlights</p>
+    </header>
+
+    <main>
+      <!-- Home menu -->
+      <section id="homeView">
+        <h2 class="section-title">Choose what to study</h2>
+
+        <div class="menu-group">
+          <h3>Flashcards by scope</h3>
+          <button class="menu-btn"
+                  data-filter-type="all"
+                  data-filter-value="ALL">
+            Study all flashcards
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="sie"
+                  data-filter-value="SIE">
+            Study SIE exam-likely flashcards
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="review"
+                  data-filter-value="REVIEW">
+            Study cards marked for review
+          </button>
+        </div>
+
+        <div class="menu-group">
+          <h3>Flashcards by unit</h3>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U1">
+            Unit 1 – Knowledge of Capital Markets
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U2">
+            Unit 2 – Understanding Products and Risks
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U3">
+            Unit 3 – Trading and Customer Accounts
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U4">
+            Unit 4 – Overview of Regulatory Framework
+          </button>
+        </div>
+
+        <div class="menu-group">
+          <h3>Flashcards by section within each unit</h3>
+          <!-- Unit 1 sections -->
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U1S1">
+            Unit 1, Section 1 – Markets and Offerings
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U1S2">
+            Unit 1, Section 2 – Market Participants and Regulations
+          </button>
+
+          <!-- Unit 2 sections -->
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U2S1">
+            Unit 2, Section 1 – Equity and Debt Securities
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U2S2">
+            Unit 2, Section 2 – Pooled Investments and Options
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U2S3">
+            Unit 2, Section 3 – Investment Risk Concepts
+          </button>
+
+          <!-- Unit 3 sections -->
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U3S1">
+            Unit 3, Section 1 – Orders, Settlement, and Margin
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U3S2">
+            Unit 3, Section 2 – Customer Accounts and Suitability
+          </button>
+
+          <!-- Unit 4 sections -->
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U4S1">
+            Unit 4, Section 1 – Regulators and Registration
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="section"
+                  data-filter-value="U4S2">
+            Unit 4, Section 2 – Business Conduct and Key Rules
+          </button>
+        </div>
+      </section>
+
+      <!-- Flashcards view -->
+      <section id="flashcardsView" class="hidden">
+        <div class="view-header">
+          <button id="backFromFlash" class="small-btn">&larr; Menu</button>
+          <div class="view-info">
+            <div id="flashFilterLabel" class="view-label"></div>
+            <div id="flashCounter" class="view-counter"></div>
+          </div>
+        </div>
+
+        <div class="card" id="flashcard">
+          <div class="card-header">
+            <div class="card-topic" id="cardTopic"></div>
+            <div class="card-badges">
+              <span id="sieBadge" class="badge badge-sie hidden">
+                SIE exam likely
+              </span>
+              <span id="reviewBadge" class="badge badge-review hidden">
+                Marked for review
+              </span>
+            </div>
+          </div>
+          <div class="card-subtopic" id="cardSubtopic"></div>
+          <div class="card-question" id="cardQuestion"></div>
+          <div class="card-answer" id="cardAnswer"></div>
+          <div class="card-context" id="cardContext"></div>
+          <div class="card-hint" id="cardHint"></div>
+        </div>
+
+        <div class="controls">
+          <button id="prevCard">Previous</button>
+          <button id="toggleAnswer">Show Answer</button>
+          <button id="nextCard">Next</button>
+        </div>
+
+        <div class="controls secondary">
+          <button id="markReviewBtn">Mark for review</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
