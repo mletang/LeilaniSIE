@@ -113,6 +113,7 @@ main {
   margin-bottom: 12px;
   border: 2px solid #d0d4e4;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  min-height: 150px; /* Give the card some default height */
 }
 
 .card-header {
@@ -136,8 +137,9 @@ main {
 }
 
 .card-question {
-  font-size: 1rem;
-  margin-top: 6px;
+  font-size: 1.1rem; /* Made question slightly larger */
+  font-weight: 500;
+  margin-top: 12px;
   margin-bottom: 10px;
 }
 
