@@ -155,19 +155,6 @@ main {
   display: block;
 }
 
-.card-context {
-  margin-top: 8px;
-  font-size: 0.86rem;
-  color: #555;
-}
-
-.card-hint {
-  margin-top: 4px;
-  font-size: 0.8rem;
-  color: #666;
-  font-style: italic;
-}
-
 /* Badges and color coding */
 
 .card-badges {
