@@ -1,4 +1,4 @@
-// SIE flashcards web app v2.0
+// SIE flashcards web app v5.0
 // Flashcards only, with SIE-likely highlighting and mark-for-review
 // Data generated based on 19-unit structure from Kaplan SIE License Exam Manual
 
@@ -2237,6 +2237,236 @@ const FLASHCARDS = [
     sieLikely: true,
     question: "What is the exception to MSRB Rule G-37 for Municipal Finance Professionals (MFPs)?",
     answer: "An MFP can contribute up to $250 per election to an official for whom they are eligible to vote, without triggering the two-year ban."
+  },
+  {
+    id: "u3_accrued_interest_calc",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.1: Bond Basics",
+    topic: "Accrued Interest Calculation",
+    sieLikely: true,
+    question: "What represents the day count convention for accrued interest on Corporate and Municipal bonds vs. U.S. Government bonds?",
+    answer: "Corporate and Municipal bonds use a 30-day month / 360-day year. U.S. Government bonds use actual calendar days / 365-day year."
+  },
+  {
+    id: "u3_bond_rating_scales",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.3: Bond Ratings",
+    topic: "Rating Scales",
+    sieLikely: true,
+    question: "What is the lowest investment-grade rating for S&P and Moody's?",
+    answer: "S&P: BBB-. Moody's: Baa3. Any rating below these (BB+ or Ba1) is considered 'junk' or high-yield."
+  },
+  {
+    id: "u3_money_market_cp",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.8: Money Market Instruments",
+    topic: "Commercial Paper",
+    sieLikely: true,
+    question: "What is the maximum maturity for Commercial Paper to remain exempt from SEC registration?",
+    answer: "270 days (9 months). It is typically issued by corporations to finance short-term needs like payroll or accounts receivable."
+  },
+  {
+    id: "u3_money_market_ba",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.8: Money Market Instruments",
+    topic: "Banker's Acceptance",
+    sieLikely: true,
+    question: "What is a Banker's Acceptance (BA) primarily used for?",
+    answer: "To finance international trade (imports/exports). It is a time draft drawn on a bank with a maturity of 270 days or less."
+  },
+  {
+    id: "u3_tax_equivalent_yield",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.7: Municipal Bonds",
+    topic: "Tax Equivalent Yield",
+    sieLikely: true,
+    question: "What is the formula for Tax Equivalent Yield (TEY)?",
+    answer: "TEY = Municipal Yield / (100% - Tax Bracket). This is used to compare a tax-free muni bond yield to a taxable corporate bond yield."
+  },
+  {
+    id: "u3_convertible_parity",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.5: Corporate Bonds",
+    topic: "Convertible Bond Parity",
+    sieLikely: true,
+    question: "How do you calculate the Conversion Ratio of a convertible bond?",
+    answer: "Conversion Ratio = Par Value ($1,000) / Conversion Price. This tells you how many shares you get for converting one bond."
+  },
+  {
+    id: "u3_treasury_tips",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.6: Government Securities",
+    topic: "TIPS",
+    sieLikely: true,
+    question: "How do Treasury Inflation-Protected Securities (TIPS) adjust for inflation?",
+    answer: "The principal value is adjusted semiannually based on the CPI. The fixed coupon rate is then applied to the adjusted principal."
+  },
+  {
+    id: "u3_agency_taxation",
+    unit: "U3",
+    unitLabel: "Chapter 3: Debt Securities",
+    sectionLabel: "Lesson 3.6: Government Securities",
+    topic: "Agency Debt Taxation",
+    sieLikely: true,
+    question: "How is interest income from GNMA, FNMA, and FHLMC securities taxed?",
+    answer: "It is fully taxable at the federal, state, and local levels. (Unlike Treasury securities, which are exempt from state/local tax)."
+  },
+  {
+    id: "u4_loi_rules",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 4.3: Reducing Front-End Loads",
+    topic: "Letter of Intent (LOI)",
+    sieLikely: true,
+    question: "What are the time limit and backdating rules for a Letter of Intent (LOI)?",
+    answer: "An LOI is valid for 13 months. It can be backdated up to 90 days to include prior purchases."
+  },
+  {
+    id: "u4_rights_of_accumulation",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 4.3: Reducing Front-End Loads",
+    topic: "Rights of Accumulation",
+    sieLikely: true,
+    question: "How do Rights of Accumulation (ROA) differ from an LOI?",
+    answer: "ROA allows an investor to qualify for breakpoints based on total appreciation and prior contributions in the account (or related accounts) with no time limit."
+  },
+  {
+    id: "u4_12b1_fees",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 4.2: Investing in Mutual Funds",
+    topic: "12b-1 Fees",
+    sieLikely: true,
+    question: "What is a 12b-1 fee and what is the maximum for a 'no-load' fund?",
+    answer: "An annual fee for marketing and distribution costs. To call a fund 'no-load', the 12b-1 fee cannot exceed 0.25% of average net assets."
+  },
+  {
+    id: "u4_closed_end_pricing",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 4.1: Investment Companies",
+    topic: "Closed-End Fund Pricing",
+    sieLikely: true,
+    question: "How is the price of a Closed-End Fund determined?",
+    answer: "By supply and demand in the secondary market. The price can trade at a premium or discount to its Net Asset Value (NAV)."
+  },
+  {
+    id: "u4_etf_vs_mutual_fund_trading",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 6.3: REITs, ETFs, and ETNs",
+    topic: "ETF Trading",
+    sieLikely: true,
+    question: "What is a primary trading difference between ETFs and Mutual Funds?",
+    answer: "ETFs trade intraday on an exchange like stocks (can be bought on margin/sold short). Mutual funds use forward pricing (priced once daily at close)."
+  },
+  {
+    id: "u4_subchapter_m",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 4.5: Disclosure Documents",
+    topic: "Subchapter M (Conduit Theory)",
+    sieLikely: true,
+    question: "What requirement must a mutual fund meet to act as a 'conduit' and avoid taxes on distributed income?",
+    answer: "It must distribute at least 90% of its Net Investment Income (NII) to shareholders."
+  },
+  {
+    id: "u4_pop_calculation",
+    unit: "U4",
+    unitLabel: "Chapter 4: Investment Companies",
+    sectionLabel: "Lesson 4.4: Net Asset Value",
+    topic: "Public Offering Price",
+    sieLikely: true,
+    question: "How do you calculate the Public Offering Price (POP) if given the NAV and Sales Charge %?",
+    answer: "POP = NAV / (100% - Sales Charge %)."
+  },
+  {
+    id: "u5_expiration_time",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.6: Options Rules",
+    topic: "Expiration",
+    sieLikely: true,
+    question: "When do standard equity option contracts expire?",
+    answer: "On the third Friday of the expiration month at 11:59 PM ET."
+  },
+  {
+    id: "u5_settlement_options",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.6: Options Rules",
+    topic: "Settlement",
+    sieLikely: true,
+    question: "What is the settlement time for option trades vs. option exercises?",
+    answer: "Trades settle T+1 (next business day). Exercise of equity options settles T+2 (underlying stock delivery)."
+  },
+  {
+    id: "u5_index_settlement",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.5: Nonequity Options",
+    topic: "Index Option Settlement",
+    sieLikely: true,
+    question: "How does the exercise of an Index Option settle?",
+    answer: "It settles in CASH on T+1. The writer pays the holder the in-the-money amount."
+  },
+  {
+    id: "u5_strategies_income",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.4: Option Strategies",
+    topic: "Income Strategy",
+    sieLikely: true,
+    question: "Which option strategy is best for generating income in a flat/neutral market?",
+    answer: "Selling (Writing) Covered Calls. You keep the premium if the stock stays flat."
+  },
+  {
+    id: "u5_strategies_hedge",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.4: Option Strategies",
+    topic: "Hedging Strategy",
+    sieLikely: true,
+    question: "What is the best strategy to protect a Long Stock position against a market decline?",
+    answer: "Buy a Protective Put. It gives the right to sell the stock at a specific strike price."
+  },
+  {
+    id: "u5_be_call",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.3: Option Calculations",
+    topic: "Call Breakeven",
+    sieLikely: true,
+    question: "What is the formula for the Breakeven point of a Call Option (Long or Short)?",
+    answer: "Strike Price + Premium."
+  },
+  {
+    id: "u5_be_put",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.3: Option Calculations",
+    topic: "Put Breakeven",
+    sieLikely: true,
+    question: "What is the formula for the Breakeven point of a Put Option (Long or Short)?",
+    answer: "Strike Price - Premium."
+  },
+  {
+    id: "u5_american_european",
+    unit: "U5",
+    unitLabel: "Chapter 5: Options",
+    sectionLabel: "Lesson 5.6: Options Rules",
+    topic: "American vs European Style",
+    sieLikely: true,
+    question: "What is the difference between American-style and European-style options?",
+    answer: "American-style can be exercised ANY time before expiration (equity options). European-style can ONLY be exercised on expiration day (mostly index options)."
   }
 ];
 
