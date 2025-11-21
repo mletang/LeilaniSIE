@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SIE Flashcards v2.0 – Exam Prep</title>
+  <title>SIE Flashcards v5.0 – Exam Prep</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <div class="app">
     <header>
-      <h1>SIE Flashcards v2.0</h1>
+      <h1>SIE Flashcards v5.0</h1>
       <p class="subtitle">Chapter-based flashcards with SIE-likely highlights</p>
     </header>
 
     <main>
-      <!-- Home menu -->
       <section id="homeView">
         <h2 class="section-title">Choose what to study</h2>
 
@@ -42,7 +41,6 @@
 
         <div class="menu-group">
           <h3>Flashcards by chapter (1-19)</h3>
-          <!-- This section is now dynamically populated based on the 19 units -->
           <button class="menu-btn" data-filter-type="unit" data-filter-value="U1">
             Chapter 1 – Equity Securities
           </button>
@@ -103,7 +101,6 @@
         </div>
       </section>
 
-      <!-- Flashcards view -->
       <section id="flashcardsView" class="hidden">
         <div class="view-header">
           <button id="backFromFlash" class="small-btn">&larr; Menu</button>
@@ -143,6 +140,6 @@
     </main>
   </div>
 
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
