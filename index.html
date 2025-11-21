@@ -4,12 +4,7 @@
   <meta charset="UTF-8" />
   <title>SIE Flashcards – Exam Prep</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
@@ -19,6 +14,7 @@
     </header>
 
     <main>
+      <!-- Home menu -->
       <section id="homeView">
         <h2 class="section-title">Choose what to study</h2>
 
@@ -67,6 +63,7 @@
 
         <div class="menu-group">
           <h3>Flashcards by section within each unit</h3>
+          <!-- Unit 1 sections -->
           <button class="menu-btn"
                   data-filter-type="section"
                   data-filter-value="U1S1">
@@ -78,6 +75,7 @@
             Unit 1, Section 2 – Market Participants and Regulations
           </button>
 
+          <!-- Unit 2 sections -->
           <button class="menu-btn"
                   data-filter-type="section"
                   data-filter-value="U2S1">
@@ -94,6 +92,7 @@
             Unit 2, Section 3 – Investment Risk Concepts
           </button>
 
+          <!-- Unit 3 sections -->
           <button class="menu-btn"
                   data-filter-type="section"
                   data-filter-value="U3S1">
@@ -105,6 +104,7 @@
             Unit 3, Section 2 – Customer Accounts and Suitability
           </button>
 
+          <!-- Unit 4 sections -->
           <button class="menu-btn"
                   data-filter-type="section"
                   data-filter-value="U4S1">
@@ -118,6 +118,7 @@
         </div>
       </section>
 
+      <!-- Flashcards view -->
       <section id="flashcardsView" class="hidden">
         <div class="view-header">
           <button id="backFromFlash" class="small-btn">&larr; Menu</button>
@@ -159,6 +160,6 @@
     </main>
   </div>
 
-  <script src="app.js?v=1"></script>
+  <script src="app.js"></script>
 </body>
 </html>
