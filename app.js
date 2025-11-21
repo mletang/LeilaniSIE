@@ -934,7 +934,6 @@ const FLASHCARDS = [
     question: "What is the 'spread'?",
     answer: "The difference between the Bid and Ask prices. This is the market maker's profit."
   },
-t(s)
   {
     id: "u8_market_order",
     unit: "U8",
@@ -2330,6 +2329,29 @@ function getFilterLabel(prefix, filterType, filterValue) {
   return prefix + "All chapters";
 }
 
+function updateMenuDeckCounts() {
+  // Build a simple map of unit -> number of cards
+  const counts = FLASHCARDS.reduce((acc, card) => {
+    acc[card.unit] = (acc[card.unit] || 0) + 1;
+    return acc;
+  }, {});
+
+  // Update chapter buttons to show how many cards are in each deck
+  const unitButtons = document.querySelectorAll('.menu-btn[data-filter-type="unit"]');
+  unitButtons.forEach(btn => {
+    const unit = btn.dataset.filterValue;
+    const count = counts[unit] || 0;
+
+    // Clean any existing "(N cards)" suffix before appending the latest value
+    let label = btn.textContent.trim();
+    label = label.replace(/\(\d+\s+cards?\)$/i, "").trim();
+
+    btn.textContent = count > 0
+      ? `${label} (${count} cards)`
+      : `${label} (0 cards)`;
+  });
+}
+
 // View helpers
 
 function showView(viewId) {
@@ -2491,5 +2513,6 @@ function setupMenuHandlers() {
 document.addEventListener("DOMContentLoaded", () => {
   setupMenuHandlers();
   setupFlashcardHandlers();
+  updateMenuDeckCounts();
   showView("homeView");
 });
