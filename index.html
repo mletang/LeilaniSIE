@@ -2,82 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SIE Exam Prep - Comprehensive</title>
+  <title>SIE Flashcards v2.0 – Exam Prep</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <!-- CACHE BUSTING META TAGS -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <!-- CSS VERSION 6 -->
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
     <header>
-      <h1>SIE Exam Prep</h1>
-      <p class="subtitle">Comprehensive Study Tool (Units 1-19)</p>
+      <h1>SIE Flashcards v2.0</h1>
+      <p class="subtitle">Chapter-based flashcards with SIE-likely highlights</p>
     </header>
 
     <main>
       <!-- Home menu -->
       <section id="homeView">
-        <h2 class="section-title">Select Study Mode</h2>
+        <h2 class="section-title">Choose what to study</h2>
 
         <div class="menu-group">
-          <h3>Master Controls</h3>
-          <button class="menu-btn" data-mode="flash" data-filter-type="all" data-filter-value="ALL">
-            Study Full Deck (All Units)
+          <h3>Flashcards by scope</h3>
+          <button class="menu-btn"
+                  data-filter-type="all"
+                  data-filter-value="ALL">
+            Study all flashcards
           </button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="sie" data-filter-value="SIE">
-            High Probability Topics
+          <button class="menu-btn"
+                  data-filter-type="sie"
+                  data-filter-value="SIE">
+            Study SIE exam-likely flashcards
           </button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="review" data-filter-value="REVIEW">
-            Study Marked for Review
+          <button class="menu-btn"
+                  data-filter-type="review"
+                  data-filter-value="REVIEW">
+            Study cards marked for review
           </button>
-          <button class="menu-btn" data-mode="quiz" data-filter-type="all" data-filter-value="ALL">
-            Full Practice Quiz
+        </div>
+
+        <div class="menu-group">
+          <h3>Flashcards by chapter (1-19)</h3>
+          <!-- This section is now dynamically populated based on the 19 units -->
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U1">
+            Chapter 1 – Equity Securities
           </button>
-        </div>
-
-        <div class="menu-group">
-          <h3>Part 1: Products & Risks</h3>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U1">Unit 1: Equity Securities</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U2">Unit 2: Corporate Actions</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U3">Unit 3: Debt Securities</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U4">Unit 4: Investment Companies</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U5">Unit 5: Options</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U6">Unit 6: Other Inv. Types (DPPs/REITs)</button>
-        </div>
-
-        <div class="menu-group">
-          <h3>Part 2: Market Structure</h3>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U7">Unit 7: Issuing Securities</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U8">Unit 8: Trading Securities</button>
-        </div>
-
-        <div class="menu-group">
-          <h3>Part 3: Accounts</h3>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U9">Unit 9: Basic Accounts</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U10">Unit 10: Retirement Plans</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U11">Unit 11: Account Features (Margin)</button>
-        </div>
-
-        <div class="menu-group">
-          <h3>Part 4: Analysis</h3>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U12">Unit 12: Economics</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U13">Unit 13: Returns & Taxes</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U14">Unit 14: Recommendations</button>
-        </div>
-
-        <div class="menu-group">
-          <h3>Part 5: Regulation</h3>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U15">Unit 15: Registration & CE</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U16">Unit 16: Govt Regulators</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U17">Unit 17: SROs (FINRA/MSRB)</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U18">Unit 18: Communications</button>
-          <button class="menu-btn" data-mode="flash" data-filter-type="unit" data-filter-value="U19">Unit 19: Business Ethics</button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U2">
+            Chapter 2 – Other Types of Equities and Corporate Actions
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U3">
+            Chapter 3 – Debt Securities
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U4">
+            Chapter 4 – Investment Companies
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U5">
+            Chapter 5 – Options
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U6">
+            Chapter 6 – Other Investment Types
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U7">
+            Chapter 7 – Issuing Securities
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U8">
+            Chapter 8 – Trading Securities
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U9">
+            Chapter 9 – Basic Accounts
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U10">
+            Chapter 10 – Retirement Accounts
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U11">
+            Chapter 11 – Account Features
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U12">
+            Chapter 12 – Economics and Analysis
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U13">
+            Chapter 13 – Investment Returns and Investment Taxation
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U14">
+            Chapter 14 – Making Recommendations
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U15">
+            Chapter 15 – Registration and Continuing Education
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U16">
+            Chapter 16 – Government Regulators and Regulations
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U17">
+            Chapter 17 – Self-Regulating Organizations
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U18">
+            Chapter 18 – Communications
+          </button>
+          <button class="menu-btn" data-filter-type="unit" data-filter-value="U19">
+            Chapter 19 – Business Ethics
+          </button>
         </div>
       </section>
 
@@ -91,16 +110,21 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="flashcard">
           <div class="card-header">
             <div class="card-topic" id="cardTopic"></div>
             <div class="card-badges">
-              <span id="sieBadge" class="badge badge-sie hidden">SIE Likely</span>
+              <span id="sieBadge" class="badge badge-sie hidden">
+                SIE exam likely
+              </span>
+              <span id="reviewBadge" class="badge badge-review hidden">
+                Marked for review
+              </span>
             </div>
           </div>
+          <div class="card-subtopic" id="cardSubtopic"></div>
           <div class="card-question" id="cardQuestion"></div>
           <div class="card-answer" id="cardAnswer"></div>
-          <div class="card-context" id="cardContext"></div>
         </div>
 
         <div class="controls">
@@ -113,34 +137,9 @@
           <button id="markReviewBtn">Mark for review</button>
         </div>
       </section>
-
-      <!-- Quiz view -->
-      <section id="quizView" class="hidden">
-        <div class="view-header">
-          <button id="backFromQuiz" class="small-btn">&larr; Menu</button>
-          <div class="view-info">
-            <div id="quizFilterLabel" class="view-label"></div>
-            <div id="quizProgress" class="view-counter"></div>
-          </div>
-        </div>
-
-        <div class="quiz-question" id="quizQuestion"></div>
-        <div class="quiz-context" id="quizContext"></div>
-
-        <div class="quiz-options" id="quizOptions"></div>
-
-        <div class="quiz-feedback" id="quizFeedback"></div>
-        <div class="quiz-review" id="quizReview"></div>
-
-        <div class="quiz-footer">
-          <div id="quizScore"></div>
-          <button id="nextQuestion">Next</button>
-        </div>
-      </section>
     </main>
   </div>
 
-  <!-- JS VERSION 6 -->
-  <script src="app.js?v=6"></script>
+  <script src="app.js"></script>
 </body>
 </html>
