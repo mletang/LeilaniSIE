@@ -4,21 +4,17 @@
   <meta charset="UTF-8" />
   <title>SIE Flashcards – Exam Prep</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
     <header>
       <h1>SIE Flashcards</h1>
-      <p class="subtitle">Unit-based flashcards with SIE-likely highlights</p>
+      <p class="subtitle">Chapter-based flashcards with SIE-likely highlights</p>
     </header>
 
     <main>
+      <!-- Home menu -->
       <section id="homeView">
         <h2 class="section-title">Choose what to study</h2>
 
@@ -42,3 +38,70 @@
         </div>
 
         <div class="menu-group">
+          <h3>Flashcards by chapter</h3>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U1">
+            Chapter 1 – Knowledge of Capital Markets
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U2">
+            Chapter 2 – Understanding Products and Risks
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U3">
+            Chapter 3 – Trading and Customer Accounts
+          </button>
+          <button class="menu-btn"
+                  data-filter-type="unit"
+                  data-filter-value="U4">
+            Chapter 4 – Overview of Regulatory Framework
+          </button>
+        </div>
+      </section>
+
+      <!-- Flashcards view -->
+      <section id="flashcardsView" class="hidden">
+        <div class="view-header">
+          <button id="backFromFlash" class="small-btn">&larr; Menu</button>
+          <div class="view-info">
+            <div id="flashFilterLabel" class="view-label"></div>
+            <div id="flashCounter" class="view-counter"></div>
+          </div>
+        </div>
+
+        <div class="card" id="flashcard">
+          <div class="card-header">
+            <div class="card-topic" id="cardTopic"></div>
+            <div class="card-badges">
+              <span id="sieBadge" class="badge badge-sie hidden">
+                SIE exam likely
+              </span>
+              <span id="reviewBadge" class="badge badge-review hidden">
+                Marked for review
+              </span>
+            </div>
+          </div>
+          <div class="card-subtopic" id="cardSubtopic"></div>
+          <div class="card-question" id="cardQuestion"></div>
+          <div class="card-answer" id="cardAnswer"></div>
+        </div>
+
+        <div class="controls">
+          <button id="prevCard">Previous</button>
+          <button id="toggleAnswer">Show Answer</button>
+          <button id="nextCard">Next</button>
+        </div>
+
+        <div class="controls secondary">
+          <button id="markReviewBtn">Mark for review</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
